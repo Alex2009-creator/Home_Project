@@ -1,0 +1,132 @@
+footer {
+    margin: 0 auto;
+    width: $container + px;
+    height: $footerheight + px;
+    background-color: $colorgray;
+    margin-top: 120px;
+    font-size: $fontsize / 4 * 7 + px;
+    font-weight: ($fontweight + 100) + px;
+    line-height: $fontsize * 3 + px;
+    letter-spacing: 0.03em;
+    color: white;
+}
+
+.footer_info {
+    width: $container + px;
+    height: ($footerheight - 70) + px;
+    display: $flex;
+    flex-direction: $row;
+    justify-content: space-between;
+
+}
+
+#pic_bottom {
+    margin-top: 58px;
+    width: 360px;
+    height: ($footerheight - 70) + px;
+    display: $flex;
+    flex-direction: $column;
+    justify-content: start;
+    align-items: center;
+}
+
+#menu_bottom {
+    margin-top: 58px;
+    width: 260px;
+    height: ($footerheight - 70) + px;
+    display: $flex;
+    flex-direction: $column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    #ul_bottom {
+        padding-left: 0;
+    }
+
+    .info_item {
+        margin: 0 0 16px 0;
+        list-style-type: $markernone;
+    }
+
+    .info_item:hover {
+        cursor: pointer;
+        color: $colorgreyhead;
+    }
+}
+
+#address {
+    margin-top: 58px;
+    width: ($container - 1024) + px;
+    height: ($footerheight - 70) + px;
+    display: $flex;
+    flex-direction: $column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h3 {
+        margin-top: 0;
+
+    }
+
+    #ul_address {
+        padding-left: 0;
+        margin-left: 17px;
+
+    }
+
+    .address_item {
+        margin: 0 0 32px 0;
+        padding-left: 10px;
+    }
+
+    #address_id1 {
+        list-style-image: url('../images/01.png');
+    }
+
+    #address_id2 {
+        list-style-image: url('../images/02.png');
+    }
+
+    #address_id3 {
+        list-style-image: url('../images/03.png');
+    }
+}
+
+#net {
+    margin-top: 58px;
+    width: 394px;
+    height: ($footerheight - 70) + px;
+    display: $flex;
+    flex-direction: $column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    div {
+        display: $flex;
+        flex-direction: $row;
+        justify-content: flex-start;
+
+        img {
+            margin: 14px 40px 0 0;
+        }
+    }
+}
+
+.footer_bottom {
+    width: $container;
+    height: 70px;
+    border-top: 1px #C8C8C8 solid;
+    display: $flex;
+    flex-direction: $row;
+    justify-content: center;
+    align-items: center;
+    color: #C8C8C8;
+}

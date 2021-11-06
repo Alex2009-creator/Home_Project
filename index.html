@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <title>Домашний проект</title>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div id="pic_top"><img src="./images/picnavtop.jpg" alt=""></div>
+            <ul id="ul_top">
+                <li class="top_item">ГЛАВНАЯ</li>
+                <li class="top_item">ГАЛЕРЕЯ</li>
+                <li class="top_item">ПРОЕКТЫ</li>
+                <li class="top_item">СЕРТИФИКАТЫ</li>
+                <li class="top_item">КОНТАКТЫ</li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header-text">
+                <div id="heading_h1">
+                    <h1>project<br><span>home</span></h1>
+                </div>
+                <div id="header_btn">
+                    <button>&#8701;</button>
+                    <button>&#8702;</button>
+                </div>
+                <div id="header_h3">
+                    <h3>01 / 02</h3>
+                </div>
+            </div>
+            <div class="header_logo">
+                <img src="./images/logo.jpg" alt="">
+                <button class="btn_sub">ВЗГЛЯНУТЬ &#8702;</button>
+            </div>
+        </header>
+        <main>
+            <section class="company">
+                <div id="div_kom12">
+                    <img id="kom1" src="./images/kompany1.jpg" alt="">
+                    <img id="kom2" src="./images/kompany2.jpg" alt="">
+                </div>
+                <div id="div_kom3">
+                    <img src="./images/kompany3.jpg" alt="">
+                </div>
+                <div id="div_art">
+                    <h2>О компании</h2>
+                    <p>Project Home – это комплексная работа над каждым объектом – от концепции до запуска и выполнения всего цикла строительства. Наша команда экспертов претворяет в жизнь архитектурные решения любой сложности. Использование надежных технологий и открытость к инновациям позволяет создавать устойчивые и современные здания. Мы берем ответственность за профессиональное управление проектом на каждом этапе строительства.</p>
+                    <button class="btn_sub">ЧИТАТЬ &#8702;</button>
+                </div>
+            </section>
+
+            <section class="task">
+                <div>
+                    <h2>Основные задачи</h2>
+                </div>
+                <div class="div_task">
+                    <div class="number">
+                        <span>1</span>
+                    </div>
+                    <div id="art1">
+                        <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                    </div>
+                    <div class="number">
+                        <span>2</span>
+                    </div>
+                    <div id="art2">
+                        <p>Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки
+                            нового оборудования и усиленной рекламы на рынке</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="task">
+                <div>
+                    <h2>Наши проекты</h2>
+                </div>
+                <div id="galery">
+                    <div id="g1">
+                        <div>
+                            <h4>ДОСУГОВЫЙ ЦЕНТР</h4>
+                            <p>ПОДРОБНЕЕ &#8702;</p>
+                        </div>
+                    </div>
+                    <div id="g2"></div>
+                    <div id="g3"></div>
+                    <div id="g4"></div>
+                    <div id="g5"></div>
+
+                </div>
+                <button class="btn_sub">ВСЕ ПРОЕКТЫ &#8702;</button>
+            </section>
+
+            <section class="contact">
+                <h2 id="contact_h2">Связаться с нами</h2>
+                <div class="div_contact">
+                    <form id="div_input" class="form" name="form0">
+                        <input class="field" type="text" name="firstname" placeholder="Имя"><br>
+                        <span class="error_message" id="error_name"></span> <br>
+                        <input class="field" type="phone" name="tphone" placeholder="Номер телефона *"> <br>
+                        <span class="error_message" id="error_tphone"></span> <br>
+                        <input class="field" type="email" name="emailuser" placeholder="E-mail *"> <br>
+                        <span class="error_message" id="error_emailuser"></span> <br>
+                        <input class="field" type="text" placeholder="Интересующий товар/услуга"> <br>
+                        <textarea name="area" id="" cols="30" rows="10"></textarea>
+                        <div id="div_text">
+                            <p id="message">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                        </div>
+                        <input class="btn_sub" id="btn_run" type="submit" name="sub" value="ВСЕ ПРОЕКТЫ &#8702;">
+                    </form>
+
+                    <div id="map"></div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer_info">
+                <div id="pic_bottom">
+                    <img src="./images/picfooter.jpg" alt="">
+                </div>
+                <div id="menu_bottom">
+                    <h3>Информация</h3>
+                    <ul id="ul_bottom">
+                        <li class="info_item">Главная</li>
+                        <li class="info_item">Галерея</li>
+                        <li class="info_item">Проекты</li>
+                        <li class="info_item">Сертификаты</li>
+                        <li class="info_item">Контакты</li>
+                    </ul>
+                </div>
+                <div id="address">
+                    <h3>Контакты</h3>
+                    <ul id="ul_address">
+                        <li class="address_item" id="address_id1">100000, Республика Казахстан,
+                            г. Караганда, ул. Телевизионная 10</li>
+                        <li class="address_item" id="address_id2">+38 (000) 000 00 00</li>
+                        <li class="address_item" id="address_id3">mail@gmail.com</li>
+                    </ul>
+                </div>
+                <div id="net">
+                    <h3>Социальные сети</h3>
+                    <div>
+                        <img src="./images/f.png" alt="">
+                        <img src="./images/t.png" alt="">
+                        <img src="./images/in.png" alt="">
+                        <img src="./images/s.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© 2021 Digital Project. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/valid.js"></script>
+    <script>
+        var map = L.map('map').setView([50.4682, 30.5028], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([50.4682, 30.5028]).addTo(map)
+            .bindPopup('Досуговый центр')
+            .openPopup();
+
+    </script>
+
+</body>
+
+</html>

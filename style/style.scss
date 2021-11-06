@@ -1,0 +1,267 @@
+$container: 1440;
+$blocksize: 1170;
+$footerheight: 417;
+$fontsize: 8;
+$fontweight: 400;
+$lineheight: 12;
+$letterspacing: 0.2;
+$upercase: uppercase;
+$markernone: none;
+$colorgray: #333333;
+$colorblack: #000000;
+$colorgreyhead: #BDBDBD;
+$colorbggray: #FBFBFB;
+$colorbody: #E5E5E5;
+$colorbg: #2C2C2C;
+$flex: flex;
+$column: column;
+$row: row;
+
+@import 'header';
+
+main {
+    margin: 0 auto;
+    width: $blocksize + px;
+}
+
+section {
+    margin-top: 120px;
+    width: $blocksize + px;
+    display: $flex;
+    justify-content: space-between;
+}
+
+.company {
+    height: 435px;
+    flex-direction: $row;
+    background-color: $colorbggray;
+
+    img {
+        width: 270px;
+        margin-top: 30px;
+    }
+}
+
+#div_kom12 {
+    margin-left: 100px;
+    width: 270px;
+
+    #kom1 {
+        height: 265px;
+    }
+
+    #kom2 {
+        height: 140px;
+    }
+}
+
+#div_kom3 {
+    align-self: center;
+    width: 270px;
+}
+
+#div_art {
+    margin-right: 100px;
+    width: $fontweight + px;
+    align-self: center;
+
+    p {
+        font-size: $fontsize * 2 + px;
+        font-weight: ($fontweight - 100) + px;
+        line-height: 25px;
+        letter-spacing: 0em;
+        color: $colorblack;
+    }
+
+    button {
+        background-color: white;
+    }
+}
+
+.task {
+    flex-direction: $column;
+
+    button {
+        background-color: $colorgray;
+        color: #FFFFFF;
+        align-self: flex-end;
+    }
+}
+
+.div_task {
+    display: $flex;
+    flex-direction: $row;
+    justify-content: space-between;
+    align-items: center;
+    width: $blocksize;
+
+    div {
+        height: 140px;
+    }
+
+    .number {
+        font-family: 'SF Pro Display';
+        font-weight: 900;
+        font-size: 140px;
+        margin: 0;
+        color: #F2F2F2;
+        width: 120px;
+
+    }
+
+    #art1 {
+        width: 280px;
+        margin-right: 180px;
+    }
+
+    #art2 {
+        width: 420px;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0;
+        color: $colorgray;
+        align-self: center;
+    }
+}
+
+#galery {
+    display: flex;
+    flex-direction: $row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    div {
+        height: 255px;
+        margin: 15px 0;
+    }
+
+    #g1 {
+        background-image: url('../images/project1.jpg');
+        width: 570px;
+        display: $flex;
+        flex-direction: $column;
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            width: 420px;
+            height: 180px;
+        }
+
+        h4 {
+            font-size: $fontsize * 8 + px;
+            font-weight: ($fontweight + 300) + px;
+            line-height: $fontsize * 8 + px;
+            letter-spacing: 0em;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        p {
+            font-family: Gothic A1;
+            font-size: $fontsize / 2 * 3 + px;
+            font-style: normal;
+            font-weight: $fontweight;
+            line-height: $fontsize / 2 * 3 + px;
+            letter-spacing: 0.2em;
+            color: #FFFFFF;
+        }
+    }
+
+    #g2 {
+        background-image: url('../images/project2.jpg');
+        width: 570px;
+    }
+
+    #g3 {
+        background-image: url('../images/project3.jpg');
+        width: 270px;
+    }
+
+    #g4 {
+        background-image: url('../images/project4.jpg');
+        width: 470px;
+    }
+
+    #g5 {
+        background-image: url('../images/project5.jpg');
+        width: 370px;
+    }
+}
+
+.contact {
+    display: $flex;
+    flex-direction: $column;
+    justify-content: flex-start;
+    width: $blocksize;
+    height: auto;
+
+    #div_text {
+        align-self: flex-start;
+        width: 340px;
+        font-size: $fontsize / 4 * 7 + px;
+        font-weight: $fontweight;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        color: $colorgray;
+        margin-left: 30px;
+    }
+
+    #btn_run {
+        background-color: $colorgray;
+        color: #FFFFFF;
+        align-self: flex-start;
+    }
+
+    #contact_h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.div_contact {
+    width: $blocksize;
+    height: 510px;
+    display: $flex;
+    flex-direction: $row;
+    justify-content: space-between;
+}
+
+#div_input {
+    width: 390px;
+    height: 510px;
+    display: block;
+    flex-direction: $column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    textarea {
+        background-color: $colorgreyhead;
+        width: 390px;
+    }
+}
+
+input {
+    width: 390px;
+    height: 40px;
+    margin-bottom: 2px;
+    background-color: $colorgreyhead;
+}
+.error_message{
+    color: red;
+    display: block;
+    position: relative;
+    margin: -22px 0 0 10px;
+    height: 4px;
+}
+
+#map {
+    width: 750px;
+    height: 370px;
+}
+
+@import 'footer';
